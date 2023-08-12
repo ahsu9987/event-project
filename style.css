@@ -4,7 +4,6 @@ body{
 }
 #home-page{
     background-image: url(images\ \(1\)/hero-bg.png);
-    height: 60=30px;
 }
 .margin-header{
     margin-top: 150px;
@@ -29,8 +28,36 @@ body{
 .mic-img{
     font-size: 45px ;
     border: 1px dotted white;
-    padding: 40px 30px 40px 30px ;
-    margin-left: 25px;
-    /* margin-top: 70px; */
+    padding: 45px 30px 45px 30px ;
     border-radius:50% ;
+}
+.service-img{
+ font-size: 50px;
+}
+#client-msg{
+    background-image: url(images\ \(1\)/testimonial_bg.jpg);
+    height: 350px;
+}
+.test-img{
+    margin-left: 730px;
+}
+.form-control{
+    width: 530px;
+}
+.contact-left{
+    margin-left: 280px;
+}
+.address-column{
+    margin-top: 130px;
+}
+.last-para{
+    font-size: 15px;
+}
+.uparrow{
+    height: 30px;
+    margin: 0px 0px 0px 380px;
+}
+a{
+    text-decoration-line: none;
+    color: white;
 }
