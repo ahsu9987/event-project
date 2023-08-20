@@ -2,19 +2,12 @@ body{
     margin: 0px;
     padding: 0px;
 }
-#home-page{
+#home{
     background-image: url(images\ \(1\)/hero-bg.png);
 }
-.margin-header{
-    margin-top: 150px;
+.header{
     font-size: 30px;
-}
-.btn-left{
-    margin-left: 570px;
-    padding: 5px 30px 5px 30px;
-}
-.bannerimg{
-    margin-left: 370px;
+    padding-top:100px ;
 }
 .btn-color{
     background-color: blue;
@@ -41,21 +34,11 @@ body{
 .test-img{
     margin-left: 730px;
 }
-.form-control{
-    width: 530px;
-}
-.contact-left{
-    margin-left: 280px;
-}
-.address-column{
-    margin-top: 130px;
-}
 .last-para{
     font-size: 15px;
 }
 .uparrow{
     height: 30px;
-    margin: 0px 0px 0px 380px;
 }
 a{
     text-decoration-line: none;
