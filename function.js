@@ -169,3 +169,85 @@
 
 // let checkWidthHeight2 = isLandscapePortrait(300,900 );
 // console.log('portrait:',checkWidthHeight2);
+
+//---------------------------------------------------------------------------------------------------------------------//
+
+// function isfizzBuzz(arg){
+//     if (typeof arg !== 'number'){
+//         return ('Nan - Not a Number! Please Input Number ')
+//     }
+
+//     if ((arg % 3 == 0 ) && ( arg % 5 == 0)){
+//         return 'fizzBuzz';
+//     }
+
+//     if (arg %3 == 0){
+//         return 'fizz' ;
+//     }
+
+//     if(arg %5 == 0){
+//         return 'Buzz';
+//     }
+//    else{
+//     return ('given input number');
+//    }
+// }
+
+// let check= isfizzBuzz(12);
+// console.log(check);
+
+// let check1= isfizzBuzz(15);
+// console.log(check1);
+
+// let check2= isfizzBuzz(12);
+// console.log(check2);
+
+// let check3= isfizzBuzz(2);
+// console.log(check3);
+
+// let check4= isfizzBuzz(10);
+// console.log(check4);
+
+//---------------------------------------------------------------------------------------------------------------------//
+
+// speed limit chcek:-
+
+// function isspeedlimit(arg){
+//     if (arg < 70 ){
+//         return 'Good safe Driving'
+//     }
+
+//     if (arg > 70 ){
+//         let pp = 0;
+//         pp = (arg-70)/5;
+//         console.log(pp);
+//      if (pp >= 10){
+//         return 'License is suspended'
+//      }
+//       else{
+//         return 'your speed limit crossd by penaltiy point '+ pp;
+
+//       }  
+//     }
+// }
+
+// let check = isspeedlimit(59);
+// console.log(check);
+
+//---------------------------------------------------------------------------------------------------------------------//
+
+// function isoddevennumber(curlimit){
+//     for (let i = curlimit; i < 10; i++){
+//         if ((i % 2)==0){
+//             return('even number');
+//         }
+//         else {
+//             return('odd number');
+//         }
+//     }
+
+// }
+
+// let check= isoddevennumber (4);
+// console.log(check);
+
