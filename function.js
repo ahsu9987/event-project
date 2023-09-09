@@ -251,3 +251,47 @@
 // let check= isoddevennumber (4);
 // console.log(check);
 
+//---------------------------------------------------------------------------------------------------------------------//
+
+// const valuesArray = [0,5,'',undefined, false,true];
+
+// let truthycount= 0;
+// let falsycount= 0;
+
+// function Checkcounttruthyfalsy(CurArray){
+    
+//     for(let values of CurArray){
+//         if(values){
+//             truthycount++;
+//         }
+//         else {
+//             falsycount++;
+//         }   
+//     }
+// }
+
+// Checkcounttruthyfalsy(valuesArray);
+// console.log(truthycount);
+// console.log(falsycount);
+
+//---------------------------------------------------------------------------------------------------------------------//
+// Object:-
+
+function showNumberproperties(CurObj){
+    for(let key in CurObj){
+        console.log(typeof(CurObj[key]));
+        if (typeof(CurObj[key]) === 'number'){
+            console.log(key,':',CurObj[key]);
+        }
+    }
+}
+
+const person = {
+    name:'Ahsan',
+    age: 22,
+    height:5.5,
+    country:'india',
+    designation: 'web developer'
+}
+
+showNumberproperties(person);
