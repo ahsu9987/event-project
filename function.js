@@ -277,21 +277,59 @@
 //---------------------------------------------------------------------------------------------------------------------//
 // Object:-
 
-function showNumberproperties(CurObj){
-    for(let key in CurObj){
-        console.log(typeof(CurObj[key]));
-        if (typeof(CurObj[key]) === 'number'){
-            console.log(key,':',CurObj[key]);
+// function showNumberproperties(CurObj){
+//     for(let key in CurObj){
+//         console.log(typeof(CurObj[key]));
+//         if (typeof(CurObj[key]) === 'number'){
+//             console.log(key,':',CurObj[key]);
+//         }
+//     }
+// }
+
+// const person = {
+//     name:'Ahsan',
+//     age: 22,
+//     height:5.5,
+//     country:'india',
+//     designation: 'web developer'
+// }
+
+// showNumberproperties(person);
+
+//---------------------------------------------------------------------------------------------------------------------//
+
+// function SumofMultipleNumbers(CurLimit){
+//     let SumofMultiplevalue = 0;
+
+//     for(let i=1; i <= CurLimit; i++){
+//         if(i % 4 === 0 || i % 5 === 0){
+//             console.log(i);
+//             SumofMultiplevalue +=i;
+//         }
+//     }
+
+//     console.log (`SumofMultiplevalue of 3 & 5 upto ${CurLimit} and digit is:`, SumofMultiplevalue); 
+// }
+
+// SumofMultipleNumbers(10);
+
+//---------------------------------------------------------------------------------------------------------------------//
+// password pattern:-
+
+function SumofNestedValue(){
+    
+    let Rows = 5;
+    for (let i=1; i <= 5; i++)
+    {
+        let pattern = '';
+        for (let l=0 ; l<i ; l++){
+            pattern+= '*';
         }
+        pattern+='';
+        console.log(pattern);
     }
 }
 
-const person = {
-    name:'Ahsan',
-    age: 22,
-    height:5.5,
-    country:'india',
-    designation: 'web developer'
-}
+SumofNestedValue();
 
-showNumberproperties(person);
+//---------------------------------------------------------------------------------------------------------------------//
