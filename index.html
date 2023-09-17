@@ -47,6 +47,7 @@
                 </div>
                 <img src="images (1)/bannerimg.png" alt="bannerimg" class="img-fluid mt-5 mb-5 bannerimg">
           </div>
+          <h1 id="headertitle">ahsan</h1>
     </section>
 
     <section id="features">
@@ -55,7 +56,7 @@
               <div class="col-lg-6 col-padding bg-white">
                 <h1 class=" "><b>We are helping to grow <br> your business. </b></h1>
                 <p class="info text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit quis aliquid assumenda nam. est quos omnis enim harum.</p>
-                <button class="btn btn-info text-light rounded-pill ps-4 pe-4 btn-color outline-none"  onclick="window.location.href='https://chat.whatsapp.com/Gji70DitHuvLqHuCpRk2vI';">Shop Now
+                <button class="btn btn-info text-light rounded-pill ps-4 pe-4 btn-color outline-none" id="changetext" onclick="doAction(this.value)">Shop Now
                   <i class="fa-solid fa-arrow-right fa-lg ps-2"></i></button>
               </div>
               <div class="col-lg-6 bg-color">
@@ -143,9 +144,10 @@
 
     <section id="client-msg">
         <div class="container text-center">
-                <img src="images (1)/test_img1.jpg" alt="bannerimg" class="img-fluid  rounded-pill  mt-5">
-                    <h3 class="text-light "><span style="color: #1f04f1;">Willamson,</span><span style="font-size: 10px;">Web developer</span></h3>
-                    <p class="text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci neque. <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci neque. <br>adipisicing elit. Adipisci neque. </p>
+                <img src="images (1)/test_img1.jpg" alt="bannerimg" class="img-fluid  rounded-pill  mt-5 changeimage" id="photochange">
+                    <h3 class="text-light" id="textchanged1"><span style="color: #1f04f1;">Willamson,</span><span style="font-size: 10px;">Web developer</span></h3>
+                    <p class="text-light" id="textchanged2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci neque. <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci neque. <br>adipisicing elit. Adipisci neque. </p>
+                    <button class="btn btn-info text-light rounded-pill ps-4 pe-4 btn-color outline-none" id="changeAll" onclick="doEasy(this.value)">Change All
             </div>
 
             <div id="carouselExampleCaptions" class="carousel slide">
