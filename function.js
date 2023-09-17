@@ -345,35 +345,27 @@
 
 // how to change javascript help to change html and css:-Button Text Change and background change:-
 
-var head = document.getElementById('changetext');
-console.log(head);
+// var head = document.getElementById('changetext');
+// console.log(head);
 
-function doAction(value){
-    // alert(value);
-    document.getElementById('changetext').innerText = "Sale end !!!!!";
-    head.style.backgroundColor = 'red';
-    head.style.fontFamily = 'calibri';
-    head.style.fontSize = '100px';
-}
+// function doAction(value){
+//     // alert(value);
+//     document.getElementById('changetext').innerText = "Sale end !!!!!";
+//     head.style.backgroundColor = 'red';
+//     head.style.fontFamily = 'calibri';
+//     head.style.fontSize = '100px';
+// }
 //---------------------------------------------------------------------------------------------------------------------//
 // how to change javascript help to change html and css:-click button paragraph and image:-
 
 var change = document.getElementById('changeAll');
 console.log(change);
 
-var photo = document.getElementById('photochange');
-console.log(photo);
-
-var text1 = document.getElementById('textchanged1');
-console.log(text1);
-
-var text2 = document.getElementById('textchanged2');
-console.log(text2);
 
 function doEasy(value){
     // alert(value);
-    document.getElementById('changeAll').innerText = "Sale !!!!!";
-    change.style.backgroundColor = 'purple  ';
+    document.getElementById('changeAll').innerText = "Hello All";
+    change.style.backgroundColor = 'purple ';
     document.getElementById('textchanged1').innerText = "i'm  developer" ;
     document.getElementById('textchanged2').innerText = "i'm  developer hi eceryvtvygtvcdexergtfdesdrtghbvces4uhgres45hyvcszrthjuybgvfedtybt" ;
     document.getElementById("photochange").src = "images (1)/test_img2.jpg";
