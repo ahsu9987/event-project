@@ -335,7 +335,7 @@
 // SumofNestedValue();
 
 //---------------------------------------------------------------------------------------------------------------------//
-//  javascript help to change html and css:- Text Change
+//  javascript help to change html and css code:- Text Change
 
 //  var head = document. getElementById('header-title');
 //  console.log(head);
@@ -343,7 +343,7 @@
 
 //---------------------------------------------------------------------------------------------------------------------//
 
-// how to change javascript help to change html and css:-Button Text Change and background change:-
+// javascript help to change html and css code :- Button Text Change and background change:-
 
 // var head = document.getElementById('changetext');
 // console.log(head);
@@ -356,18 +356,59 @@
 //     head.style.fontSize = '100px';
 // }
 //---------------------------------------------------------------------------------------------------------------------//
-// how to change javascript help to change html and css:-click button paragraph and image:-
+// javascript help to change html and css code :- click button paragraph and image change:-
 
-var change = document.getElementById('changeAll');
-console.log(change);
+// var change = document.getElementById('changeAll');
+// console.log(change);
 
 
-function doEasy(value){
-    // alert(value);
-    document.getElementById('changeAll').innerText = "Hello All";
-    change.style.backgroundColor = 'purple ';
-    document.getElementById('textchanged1').innerText = "i'm  developer" ;
-    document.getElementById('textchanged2').innerText = "i'm  developer hi eceryvtvygtvcdexergtfdesdrtghbvces4uhgres45hyvcszrthjuybgvfedtybt" ;
-    document.getElementById("photochange").src = "images (1)/test_img2.jpg";
+// function doEasy(value){
+//     // alert(value);
+//     document.getElementById('changeAll').innerText = "Hello All";
+//     change.style.backgroundColor = 'purple ';
+//     document.getElementById('textchanged1').innerText = "i'm  developer" ;
+//     document.getElementById('textchanged2').innerText = "i'm  developer hi eceryvtvygtvcdexergtfdesdrtghbvces4uhgres45hyvcszrthjuybgvfedtybt" ;
+//     document.getElementById("photochange").src = "images (1)/test_img2.jpg";
+// }
 
+//---------------------------------------------------------------------------------------------------------------------//
+
+// Query selector:-
+
+// var header = document.querySelector('#changetext');
+// header.style.borderBottom = 'solid 10px yellow' 
+// header.style.fontSize = '40px'
+// header.style.backgroundColor = 'black'
+// header.style.border = '4px solid red'
+
+//---------------------------------------------------------------------------------------------------------------------//
+
+// var fName = "ahsan"       yeh nahi lega
+
+var user = {
+
+    fName: "ahsan",
+    lName: "ansari",
+    email: "ahsau@123gmail.com",
+    role: "Admin",
+    isFbLogin: true,
+    CourseList: [],
+    buyCourse: function (CourseName){
+        this.CourseList.push(CourseName);
+    },
+    getCourseCount: function(){
+        return `${this.fName} ${this.lName}  has enrolled for ${this.CourseList.length} Courses`;
+    }
 }
+
+console.log(user.fName);
+console.log(user.lName);
+console.log(user.email);
+console.log(user.role);
+console.log(user.isFbLogin);
+user.buyCourse("c++");
+user.buyCourse("java");
+user.buyCourse("python");
+console.log(user.getCourseCount());
+
+//---------------------------------------------------------------------------------------------------------------------//
