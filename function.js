@@ -368,7 +368,7 @@
 //     change.style.backgroundColor = 'purple ';
 //     document.getElementById('textchanged1').innerText = "i'm  developer" ;
 //     document.getElementById('textchanged2').innerText = "i'm  developer hi eceryvtvygtvcdexergtfdesdrtghbvces4uhgres45hyvcszrthjuybgvfedtybt" ;
-//     document.getElementById("photochange").src = "images (1)/test_img2.jpg";
+//     document.getElementById("photochange").src = "images (1)/ahsan.jpeg";
 // }
 
 //---------------------------------------------------------------------------------------------------------------------//
@@ -383,32 +383,77 @@
 
 //---------------------------------------------------------------------------------------------------------------------//
 
+// this use:-
+
 // var fName = "ahsan"       yeh nahi lega
 
-var user = {
+// var user = {
 
-    fName: "ahsan",
-    lName: "ansari",
-    email: "ahsau@123gmail.com",
-    role: "Admin",
-    isFbLogin: true,
-    CourseList: [],
-    buyCourse: function (CourseName){
-        this.CourseList.push(CourseName);
-    },
-    getCourseCount: function(){
-        return `${this.fName} ${this.lName}  has enrolled for ${this.CourseList.length} Courses`;
-    }
-}
+//     fName: "ahsan",
+//     lName: "ansari",
+//     email: "ahsau@123gmail.com",
+//     role: "Admin",
+//     isFbLogin: true,
+//     CourseList: [],
+//     buyCourse: function (CourseName){
+//         this.CourseList.push(CourseName);
+//     },
+//     getCourseCount: function(){
+//         return `${this.fName} ${this.lName}  has enrolled for ${this.CourseList.length} Courses`;
+//     }
+// }
 
-console.log(user.fName);
-console.log(user.lName);
-console.log(user.email);
-console.log(user.role);
-console.log(user.isFbLogin);
-user.buyCourse("c++");
-user.buyCourse("java");
-user.buyCourse("python");
-console.log(user.getCourseCount());
+// console.log(user.fName);
+// console.log(user.lName);
+// console.log(user.email);
+// console.log(user.role);
+// console.log(user.isFbLogin);
+// user.buyCourse("c++");
+// user.buyCourse("java");
+// user.buyCourse("python");
+// console.log(user.getCourseCount());
 
 //---------------------------------------------------------------------------------------------------------------------//
+// darkmode
+// const themeToggleBtn = document.querySelector('.btn-toggle');
+
+// const theme = localStorage.getItem('theme');
+
+// theme && document.body.classList.add('darkmode');
+
+
+// themeToggleBtn.addEventListener('click',() =>{
+//     document.body.classList.toggle('darkmode');
+//     if(document.body.classList.contains('darkmode')){
+//         localStorage.setItem('theme','Darkmode');
+//     }else{
+//         localStorage.removeItem('theme');
+//     }
+// });
+//---------------------------------------------------------------------------------------------------------------------//
+var a = document.querySelector("body")
+var b = document.querySelector(".Toggle-ball")
+var c = document.querySelector(".navtxt")
+var d = document.querySelector(".navtxt1")
+var flag = 0;
+
+b.addEventListener("click", function(){
+    if (flag == 0){
+        a.style.backgroundColor ="black"
+        a.style.color ="white"
+        b.style="transform:translateX(67%)"
+        c.style.color ="white"
+        d.style.color ="white"
+
+        flag= 1
+    }else{
+        a.style.backgroundColor = "transparent"
+        b.style="transform:translateX(-3%)"
+        a.style.color = "black"
+        c.style.color ="black"
+        d.style.color ="black"
+
+
+        flag=0
+    }
+})
