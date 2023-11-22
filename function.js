@@ -435,15 +435,33 @@ var a = document.querySelector("body")
 var b = document.querySelector(".Toggle-ball")
 var c = document.querySelector(".navtxt")
 var d = document.querySelector(".navtxt1")
+var e = document.querySelector(".navtxt2")
+var f = document.querySelector(".navtxt3")
+var g = document.querySelector(".navtxt4")
+var h =document.querySelector(".btn-toggle")
+var i =document.querySelector("#home")
+var j =document.querySelector(".header")
+var k =document.querySelector(".btn-color")
+
+
 var flag = 0;
 
 b.addEventListener("click", function(){
     if (flag == 0){
         a.style.backgroundColor ="black"
         a.style.color ="white"
-        b.style="transform:translateX(67%)"
+        b.style="transform:translateX(92%)"
         c.style.color ="white"
         d.style.color ="white"
+        e.style.color ="white"
+        f.style.color ="white"
+        g.style.color ="white"
+        h.style.background= "linear-gradient(180deg,#777,#3a3a3a)"
+        i.style.background= "black"
+        j.style.color="white"
+        k.style.backgroundColor="black"        
+        k.style.border="1px solid white"
+        
 
         flag= 1
     }else{
@@ -452,6 +470,15 @@ b.addEventListener("click", function(){
         a.style.color = "black"
         c.style.color ="black"
         d.style.color ="black"
+        e.style.color ="black"
+        f.style.color ="black"
+        g.style.color ="black"
+        h.style.background= "whitesmoke"
+        i.style.backgroundColor= "white"
+        i.style = "opacity:10px"
+        j.style.color="gray"
+        k.style.backgroundColor="blue"        
+
 
 
         flag=0
