@@ -358,18 +358,18 @@
 //---------------------------------------------------------------------------------------------------------------------//
 // javascript help to change html and css code :- click button paragraph and image change:-
 
-// var change = document.getElementById('changeAll');
-// console.log(change);
+var change = document.getElementById('changeAll');
+console.log(change);
 
 
-// function doEasy(value){
-//     // alert(value);
-//     document.getElementById('changeAll').innerText = "Hello All";
-//     change.style.backgroundColor = 'purple ';
-//     document.getElementById('textchanged1').innerText = "i'm  developer" ;
-//     document.getElementById('textchanged2').innerText = "i'm  developer hi eceryvtvygtvcdexergtfdesdrtghbvces4uhgres45hyvcszrthjuybgvfedtybt" ;
-//     document.getElementById("photochange").src = "images (1)/ahsan.jpeg";
-// }
+function doEasy(value){
+    // alert(value);
+    document.getElementById('changeAll').innerText = "Hello All";
+    change.style.backgroundColor = 'purple ';
+    document.getElementById('textchanged1').innerText = "i'm  developer" ;
+    document.getElementById('textchanged2').innerText = "i'm  developer hi eceryvtvygtvcdexergtfdesdrtghbvces4uhgres45hyvcszrthjuybgvfedtybt" ;
+    document.getElementById("photochange").src = "images (1)/ahsan.jpeg";
+}
 
 //---------------------------------------------------------------------------------------------------------------------//
 
@@ -431,18 +431,29 @@
 //     }
 // });
 //---------------------------------------------------------------------------------------------------------------------//
+
 var a = document.querySelector("body")
 var b = document.querySelector(".Toggle-ball")
-var c = document.querySelector(".navtxt")
-var d = document.querySelector(".navtxt1")
-var e = document.querySelector(".navtxt2")
-var f = document.querySelector(".navtxt3")
-var g = document.querySelector(".navtxt4")
-var h =document.querySelector(".btn-toggle")
-var i =document.querySelector("#home")
-var j =document.querySelector(".header")
-var k =document.querySelector(".btn-color")
-
+var sunimg =document.querySelector(".sunimage")
+var moonimg =document.querySelector(".moonimage")
+var navtxt = document.querySelector(".navtxt")
+var navtxt1 = document.querySelector(".navtxt1")
+var navtxt2 = document.querySelector(".navtxt2")
+var navtxt3 = document.querySelector(".navtxt3")
+var navtxt4 = document.querySelector(".navtxt4")
+var togglebtn =document.querySelector(".btn-toggle")
+var homepg =document.querySelector("#home")
+var head1 =document.querySelector(".header")
+var btncolor =document.querySelector(".btn-color")
+var shopbtn =document.querySelector(".shopbutton")
+var bgcolorchange =document.querySelector(".bg-color")
+var chgbtn =document.querySelector(".changebtn")  
+var submitbtn =document.querySelector(".submitbutton")
+var secfeature =document.querySelector("#features")
+var secproduct =document.querySelector("#product")
+var clafeatures =document.querySelector(".features") 
+var secnav =document.querySelector("#navbar")
+var secabout =document.querySelector("#about")
 
 var flag = 0;
 
@@ -450,36 +461,56 @@ b.addEventListener("click", function(){
     if (flag == 0){
         a.style.backgroundColor ="black"
         a.style.color ="white"
-        b.style="transform:translateX(92%)"
-        c.style.color ="white"
-        d.style.color ="white"
-        e.style.color ="white"
-        f.style.color ="white"
-        g.style.color ="white"
-        h.style.background= "linear-gradient(180deg,#777,#3a3a3a)"
-        i.style.background= "black"
-        j.style.color="white"
-        k.style.backgroundColor="black"        
-        k.style.border="1px solid white"
-        
+        b.style="transform:translateX(80%)"
+        b.style.background="white"
+        moonimg.style.visibility ="visible"
+        sunimg.style.visibility = "hidden"
+        navtxt.style.color ="white"
+        navtxt1.style.color ="white"
+        navtxt2.style.color ="white"
+        navtxt3.style.color ="white"
+        navtxt4.style.color ="white"
+        togglebtn.style.background= "linear-gradient(180deg,#777,#3a3a3a)"
+        homepg.style.background= "black"
+        homepg.style.border= "1px solid white"
+        head1.style.color="white"
+        btncolor.style.backgroundColor="black"        
+        btncolor.style.border="1px solid white"
+        shopbtn.style.backgroundColor="black"
+        shopbtn.style.border="1px solid white"
+        bgcolorchange.style.backgroundColor="black"
+        bgcolorchange.style.border="1px solid white"
+        chgbtn.style.backgroundColor="black"
+        submitbtn.style.backgroundColor="black"
+        secfeature.style.border="1px solid white"
+        secproduct.style.border="1px solid white" 
+        clafeatures.style.border="1px solid white"
+        secnav.style.border="1px solid white"
+        secabout.style.border="1px solid white"
+        localStorage.setItem('theme','Dark-mode');
 
         flag= 1
     }else{
         a.style.backgroundColor = "transparent"
         b.style="transform:translateX(-3%)"
         a.style.color = "black"
-        c.style.color ="black"
-        d.style.color ="black"
-        e.style.color ="black"
-        f.style.color ="black"
-        g.style.color ="black"
-        h.style.background= "whitesmoke"
-        i.style.backgroundColor= "white"
-        i.style = "opacity:10px"
-        j.style.color="gray"
-        k.style.backgroundColor="blue"        
-
-
+        sunimg.style.visibility= "visible"
+        moonimg.style.visibility = "hidden"
+        navtxt.style.color ="gray"
+        navtxt1.style.color ="gray"
+        navtxt2.style.color ="gray"
+        navtxt3.style.color ="gray"
+        navtxt4.style.color ="gray"
+        togglebtn.style.background= "whitesmoke"
+        homepg.style.backgroundColor= "white"
+        homepg.style = "opacity:10px"
+        head1.style.color="gray"
+        btncolor.style.backgroundColor="blue" 
+        bgcolorchange.style.backgroundColor="blue"
+        shopbtn.style.backgroundColor="blue"
+        chgbtn.style.backgroundColor="blue"
+        submitbtn.style.backgroundColor="blue"
+        localStorage.setItem('theme','Light-mode');
 
         flag=0
     }
